@@ -21,6 +21,11 @@ h1{font-size:42px;margin-bottom:15px;}
 h2{font-size:30px;margin-bottom:12px;}
 h3{font-size:22px;margin-bottom:10px;}
 p{font-size:16px;line-height:1.6;margin-bottom:15px;}
+.skills{display:flex;gap:20px;flex-wrap:wrap;}
+
+/* Skill cards */
+.skill-card{flex:1;min-width:150px;text-align:center;}
+.skill-card img{width:80px;margin-bottom:10px;}
 
 /* Mobile Responsive */
 @media (max-width:768px){
@@ -31,6 +36,7 @@ p{font-size:16px;line-height:1.6;margin-bottom:15px;}
   nav a{font-size:14px;padding:10px;}
   img{max-width:100%;height:auto;}
   header, section{padding:20px;}
+  .skills{flex-direction:column;gap:15px;}
 }
 </style>
 </head>
@@ -56,12 +62,24 @@ p{font-size:16px;line-height:1.6;margin-bottom:15px;}
 
 <section>
 <h2>Available Skills</h2>
-<ul>
-<li>Content Writing</li>
-<li>Social Media Management</li>
-<li>Data Research</li>
-<li>Graphic Design</li>
-</ul>
+<div class="skills">
+  <div class="skill-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="Content Writing">
+    <p>Content Writing</p>
+  </div>
+  <div class="skill-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" alt="Data Research">
+    <p>Data Research</p>
+  </div>
+  <div class="skill-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3159/3159067.png" alt="Graphic Design">
+    <p>Graphic Design</p>
+  </div>
+  <div class="skill-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384062.png" alt="Social Media Management">
+    <p>Social Media Management</p>
+  </div>
+</div>
 </section>
 
 <section>
